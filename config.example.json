@@ -1,0 +1,23 @@
+{
+  "plugins": {
+    "enabled": true,
+    "load": {
+      "paths": ["./plugin"]
+    },
+    "entries": {
+      "sup-chat": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "sup-chat": {
+      "baseUrl": "https://sup.net",
+      "authSessionPath": "~/.config/sup/auth_session",
+      "clientVersion": "1.0.0",
+      "sessionId": "optional-session-id",
+      "pollInterval": 5000,
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@openclaw/sup-chat",
+  "version": "1.0.0",
+  "description": "OpenClaw messaging channel for sup.net chat API",
+  "main": "index.ts",
+  "type": "module",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "channel",
+    "sup",
+    "chat"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "sup-chat",
+      "label": "Sup Chat",
+      "selectionLabel": "Sup Chat (sup.net API)",
+      "docsPath": "/channels/sup-chat",
+      "docsLabel": "sup-chat",
+      "blurb": "Connect to sup.net chat API for monitoring mentions/DMs and responding.",
+      "order": 100,
+      "aliases": [
+        "sup"
+      ]
+    },
+    "install": {
+      "npmSpec": "@openclaw/sup-chat",
+      "localPath": "plugin",
+      "defaultChoice": "local"
+    }
+  },
+  "files": [
+    "index.ts",
+    "openclaw.plugin.json",
+    "README.md"
+  ]
+}
