@@ -4,6 +4,16 @@
   "version": "1.0.0",
   "description": "OpenClaw messaging channel for sup.net chat API",
   "kind": "channel",
+  "channel": {
+    "id": "sup-chat",
+    "label": "Sup Chat",
+    "selectionLabel": "Sup Chat (sup.net API)",
+    "docsPath": "/channels/sup-chat",
+    "docsLabel": "sup-chat",
+    "blurb": "Connect to sup.net chat API for monitoring mentions/DMs and responding.",
+    "order": 100,
+    "aliases": ["sup"]
+  },
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
